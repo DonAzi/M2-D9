@@ -12,31 +12,182 @@ ASSIGNMENT RULES
 
 NOTE:
 Most of the requirements in this exercises reference a bootstrap's functionality or component. 
-Make sure you check the documentation before creting anything custom.
+Make sure you check the documentation before creating anything custom.
 -->
 
 <html>
-
-<head>
+  <head>
     <!-- IMPORT ALL THE BOOSTRAP RELATED CSS & SCRIPTS-->
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <style>
-        /* PREVIOUS CODE */
+      /* PREVIOUS CODE */
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#fav-albums"
+                >Favourite Albums</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#best-album-ever"
+                >Best album ever</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#wall-of-shame"
+                >Wall of Shame</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- EXERCISE 1
         Create a Jumbotron section with a quick explanation / image of the website.
         Make it appear with a fade-in animation effect when the page loads.
     -->
-
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Web</h1>
+        <p class="lead"></p>
+      </div>
+    </div>
     <!-- EXERCISE 2
         Use a Bootstrap Card to contain every album in the favorite list you previously created.
         Use the elements of a card bootstrap provides you with to display nicely the album informations such as: album title, artist, year, etc..
     -->
+    <section id="fav-albums">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="album-container">
+              <img src="donazi/racine-caree.jpg" class="img-fluid" />
 
+              <h4 class="album-title">Black Holes and Revelations</h4>
+              <span class="album-artist">Muse</span>
+              <span class="album-genre">Rock</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="album-container">
+              <img src="donazi/end-of-aquarius.jpg" class="img-fluid" />
+              <h4 class="album-title">End of Aquarius</h4>
+              <span class="album-artist">Droid Bishop</span>
+
+              <span class="album-genre">Synthwave</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="album-container">
+              <img src="donazi/II.jpeg" class="img-fluid" />
+              <h4 class="album-title">Crystal Castles II</h4>
+              <span class="album-artist">Crystal Castles</span>
+
+              <span class="album-genre">Power Electronics</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="album-container">
+              <img src="donazi//it-takes-a-thief.jpeg" class="img-fluid" />
+              <h4 class="album-title">It Takes A Thief</h4>
+              <span class="album-artist">Thievery Corporation</span>
+              <span class="album-genre">Acid Jazz</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="album-container">
+              <img src="donazi/sympathique.jpg" class="img-fluid" />
+              <h4 class="album-title">Pink Martini</h4>
+              <span class="album-artist">Muse</span>
+              <span class="album-genre">Rocketta</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="album-container">
+              <img src="donazi/racine-caree.jpg" class="img-fluid" />
+              <h4 class="album-title">End of Aquarius</h4>
+              <span class="album-artist">Droid Bishop</span>
+
+              <span class="album-genre">Synthwave</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="album-container">
+              <img src="donazi/II.jpeg" class="img-fluid" />
+              <h4 class="album-title">Crystal Castles II</h4>
+              <span class="album-artist">Crystal Castles</span>
+
+              <span class="album-genre">Power Electronics</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="album-container">
+              <img src="donazi//it-takes-a-thief.jpeg" class="img-fluid" />
+              <h4 class="album-title">It Takes A Thief</h4>
+              <span class="album-artist">Thievery Corporation</span>
+              <span class="album-genre">Acid Jazz</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="best-album-ever">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <img
+              src="donazi/la-revancha-del-tango.jpg"
+              class="img-fluid"
+              data-bs-toggle="collapse"
+              data-bs-target="#best-album-description"
+            />
+          </div>
+          <div
+            id="best-album-description"
+            class="col-12 col-md-8 collapse show"
+          >
+            <div class="d-flex flex-column justify-content-center h-100">
+              <h4>The best Album only in Your Eyes</h4>
+              <div>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- EXERCISE 3
         Foreach album in the favorite list, place a badge on the top-left corner of the album with the genre of the music
     -->
@@ -103,6 +254,5 @@ Make sure you check the documentation before creting anything custom.
         Considering the button you've created in ex. 5 that deletes the row:
         Add a fade-out effect to the row before it gets removed, using a CSS transition effect
     -->
-</body>
-
+  </body>
 </html>
